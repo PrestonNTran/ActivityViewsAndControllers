@@ -1,0 +1,15 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div>
+    <form asp-action="AbsNameAge" method="post">
+        <p>Enter your last name: <input name="lastName" type="string" /></p>
+        <p>Enter your age: <input name="age" type="int" /></p>
+        <input name="submit" type="submit" />
+    </form>
+    <p>
+        The absolute value between your last name's length and your age is: @Model
+    </p>
+</div>

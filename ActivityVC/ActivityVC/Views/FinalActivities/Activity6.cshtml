@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<div>
+    <form asp-action="Concatenate" method="post">
+        <p>Enter your first name: <input name="firstName" type="string" /></p>
+        <p>Enter your last name: <input name="lastName" type="string" /></p>
+        <input name="submit" type="submit" />
+    </form>
+    <p>
+        Your concatenated name is: @Model
+    </p>
+</div>
